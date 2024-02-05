@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restorants",
+  "info": {
+    "singularName": "restorant",
+    "pluralName": "restorants",
+    "displayName": "restorant"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Desc": {
+      "type": "blocks"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Openninghours": {
+      "displayName": "Opening hours",
+      "type": "component",
+      "repeatable": false,
+      "component": "rasturant-info.opening-hours"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "restorants"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_job_info_oppenings",
+  "info": {
+    "displayName": "oppenings"
+  },
+  "options": {},
+  "attributes": {
+    "job_name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "job_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

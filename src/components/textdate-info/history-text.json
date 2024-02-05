@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_textdate_info_history_texts",
+  "info": {
+    "displayName": "history_text"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

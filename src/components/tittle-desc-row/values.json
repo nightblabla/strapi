@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_tittle_desc_row_values",
+  "info": {
+    "displayName": "values"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "desc": {
+      "displayName": "desc",
+      "type": "component",
+      "repeatable": true,
+      "component": "desc.desc"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_culture_info_culture_components",
+  "info": {
+    "displayName": "Culture_component",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "employe_attribute": {
+      "type": "text"
+    },
+    "title_desc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tittle-desc-row.tittle-desc-row"
+    }
+  }
+}

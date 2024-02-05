@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_news_news",
+  "info": {
+    "displayName": "news",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "blog_post": {
+      "type": "blocks"
+    },
+    "tumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "publish_date": {
+      "type": "date"
+    }
+  }
+}

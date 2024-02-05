@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_rasturant_info_opening_hours",
+  "info": {
+    "displayName": "Opening hours"
+  },
+  "options": {},
+  "attributes": {
+    "hours": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    }
+  }
+}

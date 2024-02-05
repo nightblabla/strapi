@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_metology_info_metologies",
+  "info": {
+    "displayName": "metology"
+  },
+  "options": {},
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    },
+    "lists": {
+      "type": "blocks"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

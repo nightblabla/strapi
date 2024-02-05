@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_community_image_url_community_image_urls",
+  "info": {
+    "displayName": "community_image_url"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enhanceinnovation_metologies",
+  "info": {
+    "singularName": "enhanceinnovation-metology",
+    "pluralName": "enhanceinnovation-metologies",
+    "displayName": "enhanceinnovation_metology"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metologies": {
+      "displayName": "metology",
+      "type": "component",
+      "repeatable": true,
+      "component": "metology-info.metology"
+    },
+    "innovations": {
+      "type": "blocks"
+    }
+  }
+}

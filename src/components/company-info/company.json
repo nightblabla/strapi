@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_company_info_companies",
+  "info": {
+    "displayName": "company"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "desc": {
+      "type": "blocks"
+    }
+  }
+}

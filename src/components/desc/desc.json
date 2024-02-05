@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_desc_descs",
+  "info": {
+    "displayName": "desc"
+  },
+  "options": {},
+  "attributes": {
+    "descripton": {
+      "type": "blocks"
+    }
+  }
+}

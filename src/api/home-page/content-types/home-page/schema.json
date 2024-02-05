@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "HomePage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    },
+    "background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tittle_desc_row": {
+      "displayName": "tittle_desc_row",
+      "type": "component",
+      "repeatable": true,
+      "component": "tittle-desc-row.tittle-desc-row"
+    },
+    "culture_page": {
+      "displayName": "Culture_component",
+      "type": "component",
+      "repeatable": false,
+      "component": "culture-info.culture-component"
+    }
+  }
+}

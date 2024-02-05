@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "casestudies",
+  "info": {
+    "singularName": "casestudy",
+    "pluralName": "casestudies",
+    "displayName": "Casestudy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "background_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "values": {
+      "displayName": "values",
+      "type": "component",
+      "repeatable": true,
+      "component": "tittle-desc-row.values"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

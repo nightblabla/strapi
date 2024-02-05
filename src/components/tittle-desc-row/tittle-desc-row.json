@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_tittle_desc_row_tittle_desc_rows",
+  "info": {
+    "displayName": "tittle_desc_row"
+  },
+  "options": {},
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "background_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

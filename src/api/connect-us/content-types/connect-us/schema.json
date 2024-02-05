@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "connect_uses",
+  "info": {
+    "singularName": "connect-us",
+    "pluralName": "connect-uses",
+    "displayName": "ConnectUs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "descripton": {
+      "type": "blocks"
+    },
+    "contact_info": {
+      "displayName": "contact_information",
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-info.contact-information"
+    },
+    "background_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tittle": {
+      "type": "string"
+    },
+    "blog": {
+      "displayName": "blog",
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-info.blog"
+    }
+  }
+}
