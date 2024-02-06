@@ -4,7 +4,8 @@
   "info": {
     "singularName": "employee",
     "pluralName": "employees",
-    "displayName": "Employee"
+    "displayName": "Employee",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,15 @@
       "type": "string"
     },
     "person_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "name": {
       "type": "string"
@@ -35,6 +37,12 @@
       "relation": "manyToMany",
       "target": "api::team.team",
       "mappedBy": "employees"
+    },
+    "linkedin_url": {
+      "type": "string"
+    },
+    "twitter_url": {
+      "type": "string"
     }
   }
 }
