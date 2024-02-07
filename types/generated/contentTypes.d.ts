@@ -915,7 +915,7 @@ export interface ApiConnectUsConnectUs extends Schema.SingleType {
   info: {
     singularName: 'connect-us';
     pluralName: 'connect-uses';
-    displayName: 'ConnectUs';
+    displayName: 'Contact';
     description: '';
   };
   options: {
@@ -959,15 +959,15 @@ export interface ApiEmployeeEmployee extends Schema.CollectionType {
   attributes: {
     titles: Attribute.String;
     person_image: Attribute.Media;
-    name: Attribute.String;
+    name: Attribute.String & Attribute.Unique;
     desc: Attribute.Blocks;
+    linkedin_url: Attribute.String;
+    twitter_url: Attribute.String;
     teams: Attribute.Relation<
       'api::employee.employee',
       'manyToMany',
       'api::team.team'
     >;
-    linkedin_url: Attribute.String;
-    twitter_url: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1222,6 +1222,7 @@ export interface ApiTeamTeam extends Schema.CollectionType {
     singularName: 'team';
     pluralName: 'teams';
     displayName: 'Team';
+    description: '';
   };
   options: {
     draftAndPublish: true;

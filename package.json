@@ -17,6 +17,7 @@
     "better-sqlite3": "8.6.0",
     "pg": "^8.11.3",
     "pg-connection-string": "^2.6.2",
+    "pm2": "^5.3.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
@@ -29,7 +30,7 @@
     "uuid": "592f1b9f-7a2b-4fc9-9eab-6e0a76fe015c"
   },
   "engines": {
-    "node": "18.17.0",
+    "node": "20.11.0",
     "npm": ">=6.0.0"
   },
   "license": "MIT"

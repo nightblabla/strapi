@@ -27,22 +27,23 @@
       ]
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "desc": {
       "type": "blocks"
-    },
-    "teams": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::team.team",
-      "mappedBy": "employees"
     },
     "linkedin_url": {
       "type": "string"
     },
     "twitter_url": {
       "type": "string"
+    },
+    "teams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team.team",
+      "mappedBy": "employees"
     }
   }
 }
