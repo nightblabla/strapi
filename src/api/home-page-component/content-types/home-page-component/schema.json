@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_page_components",
+  "info": {
+    "singularName": "home-page-component",
+    "pluralName": "home-page-components",
+    "displayName": "HomePageComponent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "group": {
+      "type": "blocks"
+    },
+    "key": {
+      "type": "uid"
+    }
+  }
+}

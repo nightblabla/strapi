@@ -1055,6 +1055,44 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   };
 }
 
+export interface ApiHomePageComponentHomePageComponent
+  extends Schema.CollectionType {
+  collectionName: 'home_page_components';
+  info: {
+    singularName: 'home-page-component';
+    pluralName: 'home-page-components';
+    displayName: 'HomePageComponent';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    subtitle: Attribute.Text;
+    desc: Attribute.Blocks;
+    url: Attribute.String;
+    image: Attribute.Media;
+    active: Attribute.Boolean;
+    group: Attribute.Blocks;
+    key: Attribute.UID;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::home-page-component.home-page-component',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::home-page-component.home-page-component',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiJobJob extends Schema.CollectionType {
   collectionName: 'jobs';
   info: {
@@ -1304,6 +1342,7 @@ declare module '@strapi/types' {
       'api::employee.employee': ApiEmployeeEmployee;
       'api::enhanceinnovation-metology.enhanceinnovation-metology': ApiEnhanceinnovationMetologyEnhanceinnovationMetology;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::home-page-component.home-page-component': ApiHomePageComponentHomePageComponent;
       'api::job.job': ApiJobJob;
       'api::office.office': ApiOfficeOffice;
       'api::portfolio.portfolio': ApiPortfolioPortfolio;
